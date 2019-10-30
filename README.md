@@ -1,0 +1,2 @@
+# centos-scraper
+USES BEAUTIFULSOUP TO GET THE FILENAME< DOWNLOAD LINK AND SIZE OF FILES IN http://mirror.rise.ph/centos/7/
