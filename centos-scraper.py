@@ -4,7 +4,7 @@ import csv
 
 
 def make_list():
-    url = "http://mirror.rise.ph/centos/7/"
+    url = "http://mirror.rise.ph/centos/7/updates/"
     resource = requests.get(url)
     soup = BeautifulSoup(resource.text, 'html.parser')
     table = soup.find_all('tr')
@@ -26,7 +26,6 @@ def recursive_folder(link, past, writer):
                 writer : to be able to print to csv
     """
     test = link.a['href']
-    print(test)
     if test.endswith('/'):
         resource = requests.get(past+test)
         past += test
